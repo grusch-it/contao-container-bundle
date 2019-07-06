@@ -1,0 +1,30 @@
+{
+    "name": "grusch-it/contao-container-bundle",
+    "description": "A simple container element.",
+    "keywords": ["contao", "extension"],
+    "type": "contao-bundle",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Michael Gruschwitz",
+            "email": "development@grusch-it.de"
+        }
+    ],
+    "require": {
+        "contao/core-bundle": "~4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gruschit\\Bundle\\ContainerBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/",
+            "src/Resources/contao/templates/"
+        ]
+    }
+}
