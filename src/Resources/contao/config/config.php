@@ -8,8 +8,8 @@
 
 $GLOBALS['TL_CTE']['container'] = array
 (
-  'containerStart' => 'ContentContainerStart',
-  'containerStop'  => 'ContentContainerStop',
+  'containerStart' => \Gruschit\Bundle\ContainerBundle\Elements\ContentContainerStart::class,
+  'containerStop'  => \Gruschit\Bundle\ContainerBundle\Elements\ContentContainerStop::class,
 );
 
 $GLOBALS['TL_WRAPPERS']['start'][] = 'containerStart';

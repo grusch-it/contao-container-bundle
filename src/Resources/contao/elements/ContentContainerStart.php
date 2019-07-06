@@ -28,7 +28,6 @@ class ContentContainerStart extends \Contao\ContentElement
     {
       $this->strTemplate = 'be_wildcard';
       $this->Template = new \Contao\BackendTemplate($this->strTemplate);
-      $this->Template->title = $this->headline;
     }
   }
 
